@@ -30,7 +30,7 @@ int main() {
 if (NOT HAVE_UINT128)
   FetchContent_Declare(
     boostorg
-    URL https://github.com/boostorg/boost/releases/download/boost-1.87.0/boost-1.87.0-cmake.tar.gz
+    URL https://github.com/boostorg/boost/releases/download/boost-1.81.0/boost-1.81.0.tar.gz
   )
 
   FetchContent_GetProperties(boostorg)
