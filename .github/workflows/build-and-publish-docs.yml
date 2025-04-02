@@ -19,6 +19,11 @@ jobs:
       - name: Setup Gradle
         uses: gradle/gradle-build-action@v2
 
+      - name: Setup cmake
+        uses: jwlawson/actions-setup-cmake@802fa1a2c4e212495c05bf94dba2704a92a472be
+        with:
+          cmake-version: '3.18.1'
+
       # Build java and kotlin style docs and copy kotlin output to the java folder
       # so that the deployed github page has java docs at `/` and kotlin docs at `/kotlin`
       - name: Build docs
